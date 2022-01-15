@@ -16,7 +16,7 @@ echo "Great Choice , See you!"
 exit
 
 else
-	echo "Invalid Input" ; exit
+	echo "Invalid Input, Exiting...." ; exit
 fi
 
 
